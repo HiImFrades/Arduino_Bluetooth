@@ -32,8 +32,9 @@ int patronSMS[5] = {86, 2, 400, 1, 0};
 bool flagSensor = false;
 
 /**
- * Función que se ejecuta en el arranque. Inicializa las variables
- * y componentes necesarias en el código.
+ *Función que se ejecuta en el arranque. Inicializa las variables
+ *y componentes necesarias en el código.
+ * 
  */
 void setup(){
   
@@ -60,9 +61,10 @@ void setup(){
 }
 
 /**
- * Función que se ejecuta en bucle después del setup. Forma el código
- * principal de la aplicación. Recoge las órdenes del dispositivo móvil
- * y maneja la lectura del sensor láser.
+ *Función que se ejecuta en bucle después del setup. Forma el código
+ *principal de la aplicación. Recoge las órdenes del dispositivo móvil
+ *y maneja la lectura del sensor láser.
+ * 
  */
 void loop(){
   if(BT.available()){
@@ -128,11 +130,12 @@ void loop(){
 }
 
 /**
- * Función de reproducción de notificaciones. Se le pasa un vector por parámetro
- * correspondiente con el patrón de vibración que se va a reproducir.
+ *Función de reproducción de notificaciones. Se le pasa un vector por parámetro
+ *correspondiente con el patrón de vibración que se va a reproducir.
  * 
- * @param patron - Vector de enteros que corresponde con el patrón de vibración
- * de la notificación.
+ *@param patron - Vector de enteros que corresponde con el patrón de vibración
+ *de la notificación.
+ * 
  */
 void funNotificacion(int patron[]){
   effect = patron[0];
